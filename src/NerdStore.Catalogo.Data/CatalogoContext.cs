@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace NerdStore.Catalogo.Data
 {
-    internal class CatalogoContext : DbContext, IUnitOfWork
+    public class CatalogoContext : DbContext, IUnitOfWork
     {
         public CatalogoContext(DbContextOptions<CatalogoContext> options)
             : base(options) { }
